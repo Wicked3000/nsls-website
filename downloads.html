@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads | Nambawan Savings & Loan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <img src="images/Logo.jpg" alt="NSLS Logo" class="loader-logo">
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+    <header class="top-bar">
+        <div class="container flex-between">
+            <div class="contact-info flex">
+                <div class="item" id="phone-info">
+                    <span class="icon">📞</span>
+                    <span>Call us : 1599</span>
+                </div>
+                <div class="item" id="email-info">
+                    <span class="icon">✉️</span>
+                    <span>Mail us : nsls@nambawansuper.com.pg</span>
+                </div>
+            </div>
+            <div class="quick-links flex">
+                <a href="https://www.nambawansuper.com.pg/" target="_blank">Nambawan Super</a>
+                <span class="divider">|</span>
+                <a href="https://portal.nambawansuper.com.pg/" target="_blank">Member Login</a>
+                <span class="divider">|</span>
+                <a href="https://portal.nambawansuper.com.pg/apply" target="_blank">Apply Online</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container flex-between">
+            <a href="index.html" class="logo" id="main-logo">
+                <img src="images/Logo.jpg" alt="NSLS Logo">
+            </a>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                &#9776;
+            </div>
+            <ul class="nav-menu flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="has-dropdown"><a href="services.html">Products & Services</a>
+                    <ul class="dropdown">
+                        <li><a href="general-savings.html">General Savings</a></li>
+                        <li><a href="education-savings.html">Education Savings</a></li>
+                        <li><a href="christmas-savings.html">Christmas Savings</a></li>
+                        <li><a href="loans.html">Loans</a></li>
+                        <li><a href="mobile-service.html">Mobile Service</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="downloads.html">Downloads</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li class="has-dropdown"><a href="contact.html">Contact</a>
+                    <ul class="dropdown">
+                        <li><a href="contact.html">Contact Form</a></li>
+                        <li><a href="offices.html">Our Offices</a></li>
+                    </ul>
+                </li>
+                <li class="search-icon"><span id="search-trigger">🔍</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-small">
+            <div class="container">
+                <h1>Download Centre</h1>
+                <p>Access forms, brochures, and important documents.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="download-section">
+                    <h3>Member Forms</h3>
+                    <p class="section-intro">Essential documents for membership and account management.</p>
+                    <div class="download-grid-expanded">
+                        <a href="#" class="download-item-v2" id="form-factsheet">
+                            <span class="file-icon"><i class="fas fa-file-pdf"></i></span>
+                            <div class="file-info">
+                                <strong>Company Fact Sheet</strong>
+                                <span>PDF - 1.1MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2" id="form-membership">
+                            <span class="file-icon"><i class="fas fa-file-pdf"></i></span>
+                            <div class="file-info">
+                                <strong>New Membership Form</strong>
+                                <span>PDF - 1.2MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2" id="form-update">
+                            <span class="file-icon"><i class="fas fa-file-pdf"></i></span>
+                            <div class="file-info">
+                                <strong>Member Detail Update Form</strong>
+                                <span>PDF - 800KB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2" id="form-iatd">
+                            <span class="file-icon"><i class="fas fa-file-pdf"></i></span>
+                            <div class="file-info">
+                                <strong>IATD Form Main</strong>
+                                <span>PDF - 900KB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2" id="form-pikinini">
+                            <span class="file-icon"><i class="fas fa-file-pdf"></i></span>
+                            <div class="file-info">
+                                <strong>Pikinini Saver New Member Form</strong>
+                                <span>PDF - 1.5MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2" id="form-loan-advance">
+                            <span class="file-icon"><i class="fas fa-file-pdf"></i></span>
+                            <div class="file-info">
+                                <strong>Loan Advance / Application Form</strong>
+                                <span>PDF - 2.1MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2" id="form-loan-1-2">
+                            <span class="file-icon"><i class="fas fa-file-pdf"></i></span>
+                            <div class="file-info">
+                                <strong>1:2 Unsecured Loan Application Form</strong>
+                                <span>PDF - 1.4MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2" id="form-loan-1-5">
+                            <span class="file-icon"><i class="fas fa-file-pdf"></i></span>
+                            <div class="file-info">
+                                <strong>1:5 Unsecured Loan Application Form</strong>
+                                <span>PDF - 1.6MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2" id="form-loan-teacher">
+                            <span class="file-icon"><i class="fas fa-file-pdf"></i></span>
+                            <div class="file-info">
+                                <strong>1:2 Teachers Loan Agreement Form</strong>
+                                <span>PDF - 1.3MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2" id="form-loan-schedule">
+                            <span class="file-icon"><i class="fas fa-file-pdf"></i></span>
+                            <div class="file-info">
+                                <strong>1-2 Loan Schedule</strong>
+                                <span>PDF - 700KB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2" id="form-withdrawal">
+                            <span class="file-icon"><i class="fas fa-file-pdf"></i></span>
+                            <div class="file-info">
+                                <strong>Withdrawal Application Form</strong>
+                                <span>PDF - 1.1MB</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="download-section mt-50">
+                    <h3>Brochures</h3>
+                    <p class="section-intro">Information packs for our products and services.</p>
+                    <div class="download-grid-expanded">
+                        <a href="#" class="download-item-v2 brochure" id="brochure-tertiary">
+                            <span class="file-icon"><i class="fas fa-book-open"></i></span>
+                            <div class="file-info">
+                                <strong>Tertiary Education Saver</strong>
+                                <span>PDF - 2.4MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2 brochure" id="brochure-housing">
+                            <span class="file-icon"><i class="fas fa-book-open"></i></span>
+                            <div class="file-info">
+                                <strong>Housing Saver</strong>
+                                <span>PDF - 3.1MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2 brochure" id="brochure-pikinini">
+                            <span class="file-icon"><i class="fas fa-book-open"></i></span>
+                            <div class="file-info">
+                                <strong>Pikinini Saver</strong>
+                                <span>PDF - 2.8MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2 brochure" id="brochure-loan-1-1">
+                            <span class="file-icon"><i class="fas fa-book-open"></i></span>
+                            <div class="file-info">
+                                <strong>1:1 Loan Package</strong>
+                                <span>PDF - 1.9MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2 brochure" id="brochure-loan-1-2">
+                            <span class="file-icon"><i class="fas fa-book-open"></i></span>
+                            <div class="file-info">
+                                <strong>1:2 Loan Package</strong>
+                                <span>PDF - 2.1MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2 brochure" id="brochure-1-5">
+                            <span class="file-icon"><i class="fas fa-book-open"></i></span>
+                            <div class="file-info">
+                                <strong>1.5 Brochure & FAQ</strong>
+                                <span>PDF - 2.5MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2 brochure" id="brochure-nsls-loans">
+                            <span class="file-icon"><i class="fas fa-book-open"></i></span>
+                            <div class="file-info">
+                                <strong>NSLS Loan Products</strong>
+                                <span>PDF - 3.8MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2 brochure" id="brochure-nsls-savings">
+                            <span class="file-icon"><i class="fas fa-book-open"></i></span>
+                            <div class="file-info">
+                                <strong>NSLS Savings Products</strong>
+                                <span>PDF - 3.2MB</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item-v2 brochure" id="brochure-nsls-services">
+                            <span class="file-icon"><i class="fas fa-book-open"></i></span>
+                            <div class="file-info">
+                                <strong>NSLS Services</strong>
+                                <span>PDF - 2.9MB</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="social-share-strip flex" id="social-strip-downloads">
+                    <button class="share-btn"><i class="fab fa-facebook-f"></i> Share</button>
+                    <button class="share-btn"><i class="fab fa-twitter"></i> Tweet</button>
+                    <button class="share-btn"><i class="fab fa-linkedin-in"></i> Share</button>
+                    <button class="share-btn"><i class="fas fa-envelope"></i> Mail</button>
+                    <button class="share-btn"><i class="fas fa-print"></i> Print</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" id="footer">
+        <div class="container footer-grid">
+            <div class="footer-col" id="footer-about">
+                <div class="footer-logo">
+                    <img src="images/Logo.jpg" alt="NSLS Logo">
+                </div>
+                <h4>About Us</h4>
+                <p>Nambawan Savings & Loan Society (NSLS) is a newly established Savings & Loan Society under the
+                    Savings & Loans Societies (Amended) Act 1995. Nambawan Savings & Loan Society was established to
+                    serve the short term financial needs of the Nambawan Super Fund members.</p>
+            </div>
+            <div class="footer-col" id="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="general-savings.html">General Savings Account</a></li>
+                    <li><a href="education-savings.html">Education Savings Account</a></li>
+                    <li><a href="christmas-savings.html">Christmas Savings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="footer-message">
+                <h4>Quick Message</h4>
+                <form class="footer-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Message" rows="3" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="footer-col" id="footer-search">
+                <h4>Site Search</h4>
+                <p>Search for information across our site:</p>
+                <div class="footer-search">
+                    <input type="text" placeholder="Search …">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>Copyright © 2026 Nambawan Savings & Loan | <a href="#">Privacy</a> | <a href="#">Terms &
+                        Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-close" id="search-close">&times;</div>
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <input type="text" id="site-search-input" placeholder="Search the site...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="search-results" id="search-results">
+                <!-- Results will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <canvas id="physics-canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>

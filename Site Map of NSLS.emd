@@ -1,0 +1,109 @@
+nsls.nambawansuper.com.pg/
+│
+├── **HOME** (/)
+│   ├── Hero Carousel
+│   │   ├── Education Savings Slide
+│   │   ├── [Additional rotating slides]
+│   │   └── Carousel Navigation (4 dots)
+│   ├── Welcome Section
+│   │   ├── About NSLS (intro text)
+│   │   ├── Product Range (4 icons)
+│   │   └── Download Centre (icon)
+│   └── Featured CTA Banner
+│       └── "Save Time. Apply Online" Banner
+│
+├── **ABOUT US** (/about-us)
+│   ├── What Is NSLS?
+│   ├── Why Was It Setup? (History/Establishment 2010)
+│   ├── Growth Statistics (42,000+ members)
+│   ├── Branch Network (23 NSL Branches + 6 NSLS Branches)
+│   └── Who Is Eligible to Join?
+│       └── Membership Criteria (NSL contributing members, voluntary)
+│
+├── **PRODUCTS & SERVICES** (/products-services)
+│   │
+│   ├── **General Savings** (/general-savings)
+│   │   ├── Account Features
+│   │   ├── Interest Rates
+│   │   └── Terms & Conditions
+│   │
+│   ├── **Education Savings** (/education-savings)
+│   │   ├── Tertiary Education Saver
+│   │   ├── Pikinini Saver (Children's Savings)
+│   │   ├── Fixed Deductions (Fortnightly)
+│   │   └── School Fee Payment Benefits
+│   │
+│   ├── **Christmas Savings** (/christmas-savings)
+│   │   ├── Seasonal Savings Plan
+│   │   └── Withdrawal Schedule
+│   │
+│   ├── **Loans** (/loans)
+│   │   ├── 1:1 Loan Package (Secured)
+│   │   ├── 1:2 Loan Package (Unsecured)
+│   │   ├── 1:5 Loan Package (Unsecured)
+│   │   ├── 1:2 Teachers Loan
+│   │   └── Loan Calculators/Tools
+│   │
+│   └── **Mobile Service** (/mobile-service)
+│       └── Mobile Banking Features
+│
+├── **DOWNLOADS** (/downloads)
+│   ├── **Forms**
+│   │   ├── Company Fact Sheet
+│   │   ├── New Membership Form
+│   │   ├── Member Detail Update Form
+│   │   ├── IATD Form Main
+│   │   ├── Pikinini Saver New Member Form
+│   │   ├── Loan Advance / Application Form
+│   │   ├── 1:2 Unsecured Loan Application Form
+│   │   ├── 1:5 Unsecured Loan Application Form
+│   │   ├── 1:2 Teachers Loan Agreement Form
+│   │   ├── 1-2 Loan Schedule
+│   │   └── Withdrawal Application Form
+│   │
+│   └── **Brochures**
+│       ├── Tertiary Education Saver Brochure
+│       ├── Housing Saver Brochure
+│       ├── Pikinini Saver Brochure
+│       ├── 1:1 Loan Package Brochure
+│       ├── 1:2 Loan Package Brochure
+│       ├── 1.5 Brochure & FAQ
+│       ├── NSLS Loan Products Brochure
+│       ├── NSLS Savings Products Brochure
+│       └── NSLS Services Brochure
+│
+├── **FAQs** (/faqs)
+│   └── Categorized FAQ Sections
+│       └── [Ultimate FAQ Plugin Content]
+│
+├── **CONTACT** (/contact)
+│   │
+│   ├── **Offices** (/contact/offices)
+│   │   ├── Head Office Location
+│   │   │   └── Level 2, Deloitte Haus, Port Moresby
+│   │   ├── Branch Locator (23 NSL + 6 NSLS branches)
+│   │   └── Postal Address
+│   │       └── P.O. Box 483, Port Moresby 121, NCD
+│   │
+│   └── **Contact Form** (/contact/contact-form)
+│       ├── Name (required)
+│       ├── Email (required)
+│       ├── Subject
+│       ├── Message
+│       └── Submit
+│
+├── **UTILITY PAGES**
+│   ├── Search Results (/search)
+│   ├── Member Login (External: Nambawan Super portal)
+│   └── Apply Online (External: Online Portal)
+│
+└── **FOOTER ELEMENTS** (All Pages)
+    ├── Quick Contact
+    │   ├── Call Centre: 1599
+    │   ├── Fax: +675 32144046
+    │   ├── Email: nsls@nambawansuper.com.pg
+    │   └── Website: www.nambawansuper.com.pg/nsls
+    ├── Social Media Links
+    ├── Privacy Policy
+    ├── Terms of Use
+    └── © Copyright Nambawan Savings & Loan Society

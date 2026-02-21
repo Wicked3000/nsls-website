@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Savings Account | Nambawan Savings & Loan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <img src="images/Logo.jpg" alt="NSLS Logo" class="loader-logo">
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+    <header class="top-bar">
+        <div class="container flex-between">
+            <div class="contact-info flex">
+                <div class="item" id="phone-info">
+                    <span class="icon">📞</span>
+                    <span>Call us : 1599</span>
+                </div>
+                <div class="item" id="email-info">
+                    <span class="icon">✉️</span>
+                    <span>Mail us : nsls@nambawansuper.com.pg</span>
+                </div>
+            </div>
+            <div class="quick-links flex">
+                <a href="https://www.nambawansuper.com.pg/" target="_blank">Nambawan Super</a>
+                <span class="divider">|</span>
+                <a href="https://portal.nambawansuper.com.pg/" target="_blank">Member Login</a>
+                <span class="divider">|</span>
+                <a href="https://portal.nambawansuper.com.pg/apply" target="_blank">Apply Online</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container flex-between">
+            <a href="index.html" class="logo" id="main-logo">
+                <img src="images/Logo.jpg" alt="NSLS Logo">
+            </a>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                &#9776;
+            </div>
+            <ul class="nav-menu flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="has-dropdown"><a href="services.html">Products & Services</a>
+                    <ul class="dropdown">
+                        <li><a href="general-savings.html">General Savings</a></li>
+                        <li><a href="education-savings.html">Education Savings</a></li>
+                        <li><a href="christmas-savings.html">Christmas Savings</a></li>
+                        <li><a href="loans.html">Loans</a></li>
+                        <li><a href="mobile-service.html">Mobile Service</a></li>
+                    </ul>
+                </li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li class="has-dropdown"><a href="contact.html">Contact</a>
+                    <ul class="dropdown">
+                        <li><a href="contact.html">Contact Form</a></li>
+                        <li><a href="offices.html">Our Offices</a></li>
+                    </ul>
+                </li>
+                <li class="search-icon"><span id="search-trigger">🔍</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-small"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/nsls3_new.jpg');">
+            <div class="container">
+                <h1>General Savings Account (S1)</h1>
+                <p>The primary savings foundation for every NSLS member.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="grid-layout-sidebar">
+                    <div class="main-content-area">
+                        <div class="about-block" id="gs-purpose">
+                            <h3>Purpose & Overview</h3>
+                            <p>The General Savings Account (S1) is the core account opened when you first join Nambawan
+                                Savings & Loan Society. It is designed to meet your short-term financial needs while
+                                acting as security for your loans.</p>
+                        </div>
+
+                        <div class="about-block" id="gs-rates">
+                            <h3>Contributions & Fees</h3>
+                            <ul class="benefit-list">
+                                <li><strong>Membership Fee:</strong> A one-off fee of K50.00 is required upon joining.
+                                </li>
+                                <li><strong>Minimum Contribution:</strong> Maintain a minimum fortnightly contribution
+                                    of K50.00.</li>
+                                <li><strong>Loan Security:</strong> Your accumulated savings serve as collateral for
+                                    credit facilities.</li>
+                            </ul>
+                        </div>
+
+                        <div class="about-block" id="gs-withdrawals">
+                            <h3>Withdrawal Guidelines</h3>
+                            <p>We provide flexibility while ensuring your savings continue to grow:</p>
+                            <ul class="benefit-list">
+                                <li><strong>Access:</strong> Funds are accessible after three (3) months of continuous
+                                    contributions.</li>
+                                <li><strong>Limit:</strong> Members can withdraw up to 50% of their net total savings.
+                                </li>
+                                <li><strong>Frequency:</strong> One withdrawal is permitted per month (K20.00 exit fee
+                                    applies).</li>
+                                <li><strong>Minimum Amount:</strong> The minimum withdrawal amount is K200.00.</li>
+                            </ul>
+                        </div>
+
+                        <div class="social-share-strip flex" id="social-strip-gs">
+                            <button class="share-btn"><i class="fab fa-facebook-f"></i> Share</button>
+                            <button class="share-btn"><i class="fab fa-twitter"></i> Tweet</button>
+                            <button class="share-btn"><i class="fab fa-linkedin-in"></i> Share</button>
+                            <button class="share-btn"><i class="fas fa-envelope"></i> Mail</button>
+                            <button class="share-btn"><i class="fas fa-print"></i> Print</button>
+                        </div>
+                    </div>
+
+                    <aside class="sidebar-area" id="gs-sidebar">
+                        <div class="sidebar-box">
+                            <h4>Other Products</h4>
+                            <ul class="sidebar-links">
+                                <li><a href="education-savings.html">Education Savings</a></li>
+                                <li><a href="christmas-savings.html">Christmas Savings</a></li>
+                                <li><a href="loans.html">Loan Products</a></li>
+                                <li><a href="mobile-service.html">Mobile Banking</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-box" style="margin-top: 20px; background: var(--primary); color: white;">
+                            <h4>Want to Join?</h4>
+                            <p>Start your savings journey today and unlock low-interest loans.</p>
+                            <a href="https://portal.nambawansuper.com.pg/apply" target="_blank" class="know-more-btn"
+                                style="background: white; color: var(--primary); border: none; margin-top: 15px; display: inline-block;">Apply
+                                Now</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" id="footer">
+        <div class="container footer-grid">
+            <div class="footer-col" id="footer-about">
+                <div class="footer-logo">
+                    <img src="images/Logo.jpg" alt="NSLS Logo">
+                </div>
+                <h4>About Us</h4>
+                <p>Nambawan Savings & Loan Society (NSLS) is a newly established Savings & Loan Society under the
+                    Savings & Loans Societies (Amended) Act 1995. Nambawan Savings & Loan Society was established to
+                    serve the short term financial needs of the Nambawan Super Fund members.</p>
+            </div>
+            <div class="footer-col" id="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="general-savings.html">General Savings Account</a></li>
+                    <li><a href="education-savings.html">Education Savings Account</a></li>
+                    <li><a href="christmas-savings.html">Christmas Savings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="footer-message">
+                <h4>Quick Message</h4>
+                <form class="footer-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Message" rows="3" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="footer-col" id="footer-search">
+                <h4>Site Search</h4>
+                <p>Search for information across our site:</p>
+                <div class="footer-search">
+                    <input type="text" placeholder="Search …">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>Copyright © 2026 Nambawan Savings & Loan | <a href="#">Privacy</a> | <a href="#">Terms &
+                        Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-close" id="search-close">&times;</div>
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <input type="text" id="site-search-input" placeholder="Search the site...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="search-results" id="search-results">
+                <!-- Results will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <canvas id="physics-canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>

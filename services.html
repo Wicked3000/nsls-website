@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 </head>
 
 <body>
@@ -21,6 +21,7 @@
             </div>
         </div>
     </div>
+    <canvas id="physics-canvas"></canvas>
     <header class="top-bar">
         <div class="container flex-between">
             <div class="contact-info flex">
@@ -90,55 +91,55 @@
 
         <section class="content-section">
             <div class="container">
-                <div class="product-grid-v2">
+                <div class="product-grid-v2" style="gap: 30px;">
                     <!-- General Savings -->
-                    <div class="product-item-centered" id="prod-general">
-                        <div class="icon-wrapper-large">
-                            <span class="icon-inner">✓</span>
+                    <div class="product-item-centered glass-card soft-shadow" id="prod-general" style="padding: 50px 30px; border-radius: 30px; transition: var(--transition); border: 1px solid rgba(124, 179, 66, 0.2);">
+                        <div class="icon-wrapper-large" style="background: var(--primary-light); border: none;">
+                            <span class="icon-inner" style="color: var(--primary-dark);"><i class="fas fa-wallet"></i></span>
                         </div>
                         <h4>General Savings</h4>
-                        <p>This is the primary savings account that is opened when you first join the Society.</p>
-                        <a href="general-savings.html" class="know-more-btn">Know More..</a>
+                        <p>The core account for all NSLS members, offering flexibility and competitive interest.</p>
+                        <a href="general-savings.html" class="cta-button" style="padding: 12px 30px; font-size: 0.9rem;">View Details</a>
                     </div>
 
                     <!-- Education Savings -->
-                    <div class="product-item-centered" id="prod-education">
-                        <div class="icon-wrapper-large">
-                            <span class="icon-inner">✎</span>
+                    <div class="product-item-centered glass-card soft-shadow" id="prod-education" style="padding: 50px 30px; border-radius: 30px; transition: var(--transition); border: 1px solid rgba(124, 179, 66, 0.2);">
+                        <div class="icon-wrapper-large" style="background: var(--primary-light); border: none;">
+                            <span class="icon-inner" style="color: var(--primary-dark);"><i class="fas fa-user-graduate"></i></span>
                         </div>
                         <h4>Education Savings</h4>
-                        <p>A product designed to assist you save for your education related expenses</p>
-                        <a href="education-savings.html" class="know-more-btn">Know More..</a>
+                        <p>Secure your children's future with a dedicated fund for school and tertiary fees.</p>
+                        <a href="education-savings.html" class="cta-button" style="padding: 12px 30px; font-size: 0.9rem;">View Details</a>
                     </div>
 
                     <!-- Christmas Savings -->
-                    <div class="product-item-centered" id="prod-christmas">
-                        <div class="icon-wrapper-large">
-                            <span class="icon-inner">🎁</span>
+                    <div class="product-item-centered glass-card soft-shadow" id="prod-christmas" style="padding: 50px 30px; border-radius: 30px; transition: var(--transition); border: 1px solid rgba(124, 179, 66, 0.2);">
+                        <div class="icon-wrapper-large" style="background: var(--primary-light); border: none;">
+                            <span class="icon-inner" style="color: var(--primary-dark);"><i class="fas fa-holly-berry"></i></span>
                         </div>
                         <h4>Christmas Savings</h4>
-                        <p>NSLS' product to assist you save for your Christmas related expenses.</p>
-                        <a href="christmas-savings.html" class="know-more-btn">Know More..</a>
+                        <p>Take the stress out of the holidays by saving ahead for festive celebrations.</p>
+                        <a href="christmas-savings.html" class="cta-button" style="padding: 12px 30px; font-size: 0.9rem;">View Details</a>
                     </div>
 
                     <!-- Loan Product -->
-                    <div class="product-item-centered" id="prod-loan">
-                        <div class="icon-wrapper-large">
-                            <span class="icon-inner">✓</span>
+                    <div class="product-item-centered glass-card soft-shadow" id="prod-loan" style="padding: 50px 30px; border-radius: 30px; transition: var(--transition); border: 1px solid rgba(124, 179, 66, 0.2);">
+                        <div class="icon-wrapper-large" style="background: var(--primary-light); border: none;">
+                            <span class="icon-inner" style="color: var(--primary-dark);"><i class="fas fa-hand-holding-dollar"></i></span>
                         </div>
-                        <h4>Loan Product</h4>
-                        <p>Loan facility for all members of Nambawan Savings & Loans Society</p>
-                        <a href="loans.html" class="know-more-btn">Know More..</a>
+                        <h4>Loan Products</h4>
+                        <p>Access affordable credit with 1:1, 1:2, and 1:3 loan options based on your savings.</p>
+                        <a href="loans.html" class="cta-button" style="padding: 12px 30px; font-size: 0.9rem;">View Details</a>
                     </div>
 
                     <!-- Mobile Service -->
-                    <div class="product-item-centered" id="prod-mobile">
-                        <div class="icon-wrapper-large">
-                            <span class="icon-inner">📱</span>
+                    <div class="product-item-centered glass-card soft-shadow" id="prod-mobile" style="padding: 50px 30px; border-radius: 30px; transition: var(--transition); border: 1px solid rgba(124, 179, 66, 0.2);">
+                        <div class="icon-wrapper-large" style="background: var(--primary-light); border: none;">
+                            <span class="icon-inner" style="color: var(--primary-dark);"><i class="fas fa-mobile-screen-button"></i></span>
                         </div>
-                        <h4>Mobile Service</h4>
-                        <p>Mobile service for convenience of our members</p>
-                        <a href="mobile-service.html" class="know-more-btn">Know More..</a>
+                        <h4>Mobile Banking</h4>
+                        <p>Manage your funds on the go via USSD. Check balances and transfer funds instantly.</p>
+                        <a href="mobile-service.html" class="cta-button" style="padding: 12px 30px; font-size: 0.9rem;">View Details</a>
                     </div>
                 </div>
 

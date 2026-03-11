@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 </head>
 
 <body>
@@ -26,6 +26,7 @@
             </div>
         </div>
     </div>
+    <canvas id="physics-canvas"></canvas>
     <header class="top-bar">
         <div class="container flex-between">
             <div class="contact-info flex">
@@ -94,7 +95,7 @@
         <section class="content-section" style="padding: 80px 0;">
             <div class="container">
                 <div class="grid-2">
-                    <div class="contact-form-container" id="contact-form-box" style="padding-right: 40px;">
+                    <div class="contact-form-container glass-card soft-shadow" id="contact-form-box" style="padding: 40px; border-radius: 24px; border: 1px solid rgba(124, 179, 66, 0.2);">
                         <h2
                             style="font-family: 'Outfit', sans-serif; font-size: 2rem; color: var(--secondary); margin-bottom: 25px;">
                             Send us a Message</h2>
@@ -123,50 +124,32 @@
                         </form>
                     </div>
                     <div class="office-info" id="office-details"
-                        style="padding-left: 40px; border-left: 1px solid var(--divider);">
-                        <div class="contact-block-v2" id="info-topics" style="margin-bottom: 40px;">
-                            <h3
-                                style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: var(--secondary); margin-bottom: 15px;">
-                                Information Topics</h3>
-                            <ul class="benefit-list">
-                                <li>General Savings</li>
-                                <li>Education Savings</li>
-                                <li>Christmas Savings</li>
-                                <li>How to join</li>
-                                <li>Forms</li>
-                            </ul>
-                        </div>
-
-                        <div class="contact-block-v2" id="head-office" style="margin-bottom: 40px;">
-                            <h3
-                                style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: var(--secondary); margin-bottom: 15px;">
-                                Head Office</h3>
+                        style="padding-left: 40px;">
+                        <div class="contact-block-v2 glass-card soft-shadow" id="head-office" style="padding: 30px; border-radius: 20px; margin-bottom: 30px; border: 1px solid rgba(124, 179, 66, 0.1);">
+                            <div class="flex" style="gap: 15px; margin-bottom: 15px;">
+                                <div class="icon-circle" style="width: 45px; height: 45px; font-size: 1.1rem; background: var(--primary-light); color: var(--primary-dark);">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <h3 style="margin-bottom: 0; font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: var(--secondary);">Head Office</h3>
+                            </div>
                             <p><strong>Level 2, Deloitte Haus</strong></p>
-                            <p>McGregor St, Port Moresby</p>
-                            <p>Papua New Guinea</p>
+                            <p>McGregor St, Port Moresby, PNG</p>
                             <div style="margin-top: 15px;">
-                                <p><i class="fas fa-phone" style="width: 25px; color: var(--primary);"></i> Call Centre:
-                                    1599</p>
-                                <p><i class="fas fa-fax" style="width: 25px; color: var(--primary);"></i> Fax: +675
-                                    32144046</p>
-                                <p><i class="fas fa-envelope" style="width: 25px; color: var(--primary);"></i>
-                                    nsls@nambawansuper.com.pg</p>
-                                <p><i class="fas fa-globe" style="width: 25px; color: var(--primary);"></i> <a
-                                        href="http://www.nambawansuper.com.pg/nsls" target="_blank"
-                                        style="color: var(--primary); text-decoration: none;">www.nambawansuper.com.pg/nsls</a>
-                                </p>
+                                <p><i class="fas fa-phone" style="width: 25px; color: var(--primary);"></i> 1599</p>
+                                <p><i class="fas fa-envelope" style="width: 25px; color: var(--primary);"></i> nsls@nambawansuper.com.pg</p>
                             </div>
                         </div>
 
-                        <div class="contact-block-v2" id="postal-info">
-                            <h3
-                                style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: var(--secondary); margin-bottom: 15px;">
-                                Postal Address</h3>
-                            <p>P.O. Box 483</p>
-                            <p>Port Moresby, 121</p>
+                        <div class="contact-block-v2 glass-card soft-shadow" id="postal-info" style="padding: 30px; border-radius: 20px; border: 1px solid rgba(124, 179, 66, 0.1);">
+                            <div class="flex" style="gap: 15px; margin-bottom: 15px;">
+                                <div class="icon-circle" style="width: 45px; height: 45px; font-size: 1.1rem; background: var(--primary-light); color: var(--primary-dark);">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                </div>
+                                <h3 style="margin-bottom: 0; font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: var(--secondary);">Postal Address</h3>
+                            </div>
+                            <p>P.O. Box 483, Port Moresby, 121</p>
                             <p>National Capital District, PNG</p>
                         </div>
-
                     </div>
                 </div>
 

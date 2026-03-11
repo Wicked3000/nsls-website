@@ -190,8 +190,8 @@ function initPhysics() {
                 rect.top + rect.height / 2,
                 Math.max(rect.width, rect.height) / 2,
                 {
-                    frictionAir: 0.1,
-                    restitution: 0.8,
+                    frictionAir: 0.08,
+                    restitution: 0.6,
                     render: { visible: false },
                     isStatic: item.reveal === 'fall' // Start as static if it needs to fall later
                 }
@@ -203,8 +203,8 @@ function initPhysics() {
                 rect.width,
                 rect.height,
                 {
-                    frictionAir: 0.1,
-                    restitution: 0.6,
+                    frictionAir: 0.06,
+                    restitution: 0.4,
                     render: { visible: false },
                     isStatic: item.reveal === 'fall'
                 }
@@ -246,6 +246,12 @@ function initPhysics() {
             const el = elementsMap.get(body.id);
             if (!el) return;
 
+            // Initialize initial positions if not set
+            if (body.initialX === undefined) {
+                body.initialX = body.position.x;
+                body.initialY = body.position.y;
+            }
+
             // Update DOM element position based on physics body
             const { x, y } = body.position;
             const angle = body.angle;
@@ -255,6 +261,7 @@ function initPhysics() {
                 // We use translate3d for performance
                 el.style.transform = `translate3d(${x - body.initialX}px, ${y - body.initialY}px, 0) rotate(${angle}rad)`;
             } else {
+                // Keep updating initial position while static to handle layout shifts
                 body.initialX = x;
                 body.initialY = y;
             }

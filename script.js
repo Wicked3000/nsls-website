@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
         initHeroCarousel();
         initSiteSearch();
-        initPhysics();
     } catch (e) {
         console.error("Core components init failed", e);
     }
@@ -83,89 +82,6 @@ function initMobileMenu() {
                 dropdown.classList.toggle('active');
             }
         });
-    });
-}
-
-// Anti-Gravity Physics Engine
-function initPhysics() {
-    const canvas = document.getElementById('physics-canvas');
-    if (!canvas || !window.Matter) return;
-
-    const { Engine, Render, Runner, Bodies, Composite, Mouse, MouseConstraint, Events } = Matter;
-
-    const engine = Engine.create();
-    engine.gravity.y = 0; // Zero gravity for floating effect
-
-    const render = Render.create({
-        canvas: canvas,
-        engine: engine,
-        options: {
-            width: window.innerWidth,
-            height: window.innerHeight,
-            wireframes: false,
-            background: 'transparent'
-        }
-    });
-
-    Render.run(render);
-    const runner = Runner.create();
-    Runner.run(runner, engine);
-
-    // Create floating bubbles
-    const bubbles = [];
-    const colors = ['#7CB342', '#DCEDC8', '#FFB300', '#F0F4C3'];
-
-    for (let i = 0; i < 20; i++) {
-        const radius = Math.random() * 40 + 10;
-        const bubble = Bodies.circle(
-            Math.random() * window.innerWidth,
-            Math.random() * window.innerHeight,
-            radius,
-            {
-                frictionAir: 0.05,
-                restitution: 1,
-                render: {
-                    fillStyle: colors[Math.floor(Math.random() * colors.length)],
-                    opacity: 0.2
-                }
-            }
-        );
-        bubbles.push(bubble);
-    }
-
-    Composite.add(engine.world, bubbles);
-
-    // Subtle drift
-    Events.on(engine, 'afterUpdate', () => {
-        bubbles.forEach(bubble => {
-            Matter.Body.applyForce(bubble, bubble.position, {
-                x: (Math.random() - 0.5) * 0.001,
-                y: (Math.random() - 0.5) * 0.001
-            });
-
-            // Wrap around screen
-            if (bubble.position.x > window.innerWidth + 50) Matter.Body.setPosition(bubble, { x: -50, y: bubble.position.y });
-            if (bubble.position.x < -50) Matter.Body.setPosition(bubble, { x: window.innerWidth + 50, y: bubble.position.y });
-            if (bubble.position.y > window.innerHeight + 50) Matter.Body.setPosition(bubble, { x: bubble.position.x, y: -50 });
-            if (bubble.position.y < -50) Matter.Body.setPosition(bubble, { x: bubble.position.x, y: window.innerHeight + 50 });
-        });
-    });
-
-    // Interaction
-    const mouse = Mouse.create(render.canvas);
-    const mouseConstraint = MouseConstraint.create(engine, {
-        mouse: mouse,
-        constraint: {
-            stiffness: 0.2,
-            render: { visible: false }
-        }
-    });
-
-    Composite.add(engine.world, mouseConstraint);
-
-    window.addEventListener('resize', () => {
-        render.canvas.width = window.innerWidth;
-        render.canvas.height = window.innerHeight;
     });
 }
 

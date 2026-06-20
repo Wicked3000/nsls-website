@@ -1,355 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Nambawan Savings & Loan</title>
+    <title>Contact Us | Paddy's Hotel & Apartments</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Leaflet Map -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <style>
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: 600; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;
+        }
+    </style>
 </head>
-
 <body>
-    <div id="loader-wrapper">
-        <div class="loader-content">
-            <img src="images/Logo.jpg" alt="NSLS Logo" class="loader-logo">
-            <div class="loader-progress">
-                <div class="loader-bar"></div>
-            </div>
-        </div>
-    </div>
-    <header class="top-bar">
-        <div class="container flex-between">
-            <div class="contact-info flex">
-                <div class="item" id="phone-info">
-                    <span class="icon">📞</span>
-                    <span>Call us : 1599</span>
-                </div>
-                <div class="item" id="email-info">
-                    <span class="icon">✉️</span>
-                    <span>Mail us : nsls@nambawansuper.com.pg</span>
-                </div>
-            </div>
-            <div class="quick-links flex">
-                <a href="https://www.nambawansuper.com.pg/" target="_blank">Nambawan Super</a>
-                <span class="divider">|</span>
-                <a href="https://portal.nambawansuper.com.pg/" target="_blank">Member Login</a>
-                <span class="divider">|</span>
-                <a href="https://portal.nambawansuper.com.pg/apply" target="_blank">Apply Online</a>
-            </div>
+    <header>
+        <div class="container navbar flex-between">
+            <a href="index.html" class="logo">
+                <h1>PADDY'S HOTEL</h1>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="accomm_rooms.html" class="nav-link">Accommodation</a></li>
+                    <li><a href="restaurant.html" class="nav-link">Dining</a></li>
+                    <li><a href="business.html" class="nav-link">Business</a></li>
+                    <li><a href="staynplay.html" class="nav-link">Stay & Play</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="reservations.html" class="btn-book">Book Now</a>
         </div>
     </header>
 
-    <nav class="main-nav">
-        <div class="container flex-between">
-            <a href="index.html" class="logo" id="main-logo">
-                <img src="images/Logo.jpg" alt="NSLS Logo">
-            </a>
-            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
-                &#9776;
-            </div>
-            <ul class="nav-menu flex">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="has-dropdown"><a href="services.html">Products & Services</a>
-                    <ul class="dropdown">
-                        <li><a href="general-savings.html">General Savings</a></li>
-                        <li><a href="education-savings.html">Education Savings</a></li>
-                        <li><a href="christmas-savings.html">Christmas Savings</a></li>
-                        <li><a href="loans.html">Loans</a></li>
-                        <li><a href="mobile-service.html">Mobile Service</a></li>
-                    </ul>
-                </li>
-                <li><a href="downloads.html">Downloads</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-                <li class="active has-dropdown"><a href="contact.html">Contact</a>
-                    <ul class="dropdown">
-                        <li><a href="contact.html">Contact Form</a></li>
-                        <li><a href="offices.html">Our Offices</a></li>
-                    </ul>
-                </li>
-                <li class="search-icon"><span id="search-trigger">🔍</span></li>
-            </ul>
-        </div>
-    </nav>
-
     <main>
-        <section class="hero-small"
-            style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80'); background-size: cover; background-position: center; height: 350px; display: flex; align-items: center; text-align: center; color: white;">
-            <div class="container">
-                <h1 style="font-family: 'Outfit', sans-serif; font-size: 3.5rem; margin-bottom: 15px;">Get in Touch</h1>
-                <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">We're here to help you
-                    secure your financial future. Reach out to us via the form or visit any of our offices.</p>
+        <section class="section-padding bg-light" style="padding-top: 120px;">
+            <div class="container text-center">
+                <h1 class="mb-20">Get In Touch</h1>
+                <p class="mb-40" style="max-width: 800px; margin: 0 auto;">Have a question or need assistance? Reach out to our team and we'll be happy to help.</p>
             </div>
         </section>
 
-        <section class="content-section" style="padding: 80px 0;">
+        <section class="section-padding">
             <div class="container">
-                <div class="grid-2">
-                    <div class="contact-form-container" id="contact-form-box" style="padding-right: 40px;">
-                        <h2
-                            style="font-family: 'Outfit', sans-serif; font-size: 2rem; color: var(--secondary); margin-bottom: 25px;">
-                            Send us a Message</h2>
-                        <!-- ✅ Formspree: replace YOUR_FORM_ID with your real ID from formspree.io -->
-                        <form class="contact-form" id="main-contact-form" action="backend/contact.php" method="POST">
-                            <div id="form-status"
-                                style="display:none; padding:12px 18px; border-radius:8px; margin-bottom:16px; font-weight:600;">
+                <div class="flex-between" style="gap: 50px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <h2 class="mb-20">Contact Information</h2>
+                        <div class="mb-40">
+                            <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--primary); font-size: 1.5rem;"></i>
+                                <div>
+                                    <h4>Physical Location</h4>
+                                    <p>Boroko Commercial District, Port Moresby, Papua New Guinea</p>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="contact-name">Your Name (required)</label>
-                                <input id="contact-name" type="text" name="name" required>
+                            <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                                <i class="fas fa-envelope-open-text" style="color: var(--primary); font-size: 1.5rem;"></i>
+                                <div>
+                                    <h4>Postal Address</h4>
+                                    <p>P.O. Box 4516, Boroko NCD 111, Papua New Guinea</p>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="contact-email">Your Email (required)</label>
-                                <input id="contact-email" type="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-subject">Subject</label>
-                                <input id="contact-subject" type="text" name="subject">
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-message">Your Message</label>
-                                <textarea id="contact-message" name="message" rows="5"></textarea>
-                            </div>
-                            <button type="submit" class="cta-button" id="main-submit-btn">Submit Message</button>
-                        </form>
-                    </div>
-                    <div class="office-info" id="office-details"
-                        style="padding-left: 40px; border-left: 1px solid var(--divider);">
-                        <div class="contact-block-v2" id="info-topics" style="margin-bottom: 40px;">
-                            <h3
-                                style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: var(--secondary); margin-bottom: 15px;">
-                                Information Topics</h3>
-                            <ul class="benefit-list">
-                                <li>General Savings</li>
-                                <li>Education Savings</li>
-                                <li>Christmas Savings</li>
-                                <li>How to join</li>
-                                <li>Forms</li>
-                            </ul>
-                        </div>
-
-                        <div class="contact-block-v2" id="head-office" style="margin-bottom: 40px;">
-                            <h3
-                                style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: var(--secondary); margin-bottom: 15px;">
-                                Head Office</h3>
-                            <p><strong>Level 2, Deloitte Haus</strong></p>
-                            <p>McGregor St, Port Moresby</p>
-                            <p>Papua New Guinea</p>
-                            <div style="margin-top: 15px;">
-                                <p><i class="fas fa-phone" style="width: 25px; color: var(--primary);"></i> Call Centre:
-                                    1599</p>
-                                <p><i class="fas fa-fax" style="width: 25px; color: var(--primary);"></i> Fax: +675
-                                    32144046</p>
-                                <p><i class="fas fa-envelope" style="width: 25px; color: var(--primary);"></i>
-                                    nsls@nambawansuper.com.pg</p>
-                                <p><i class="fas fa-globe" style="width: 25px; color: var(--primary);"></i> <a
-                                        href="http://www.nambawansuper.com.pg/nsls" target="_blank"
-                                        style="color: var(--primary); text-decoration: none;">www.nambawansuper.com.pg/nsls</a>
-                                </p>
+                            <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                                <i class="fas fa-phone-alt" style="color: var(--primary); font-size: 1.5rem;"></i>
+                                <div>
+                                    <h4>Phone & Fax</h4>
+                                    <p>T: +675 323 3202<br>F: +675 325 7998</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="contact-block-v2" id="postal-info">
-                            <h3
-                                style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: var(--secondary); margin-bottom: 15px;">
-                                Postal Address</h3>
-                            <p>P.O. Box 483</p>
-                            <p>Port Moresby, 121</p>
-                            <p>National Capital District, PNG</p>
+                        <h2 class="mb-20">Our Location</h2>
+                        <div style="width: 100%; height: 300px; background: #eee; border-radius: 15px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="Map Placeholder" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+                            <div style="position: absolute; text-align: center; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                                <i class="fas fa-map-pin" style="color: red; font-size: 2rem;"></i>
+                                <p style="font-weight: 700; margin-top: 10px;">Paddy's Hotel & Apartments</p>
+                            </div>
                         </div>
-
                     </div>
-                </div>
 
-                <div class="branch-proper-map" id="branch-proper-map"
-                    style="margin-top: 60px; padding-top: 40px; border-top: 1px solid var(--divider);">
-                    <div class="section-header text-center" style="margin-bottom: 40px;">
-                        <h2
-                            style="font-family: 'Outfit', sans-serif; font-size: 2.5rem; color: var(--secondary); margin-bottom: 10px;">
-                            Our Nationwide Network</h2>
-                        <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin: 0 auto;">Visit
-                            us at any of our 23 Nambawan Super branches and 6 NSLS branches nationwide.</p>
+                    <div style="flex: 1; min-width: 300px;">
+                        <div class="card" style="padding: 40px;">
+                            <h2 class="mb-20">Send us a Message</h2>
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" placeholder="example@mail.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <select id="subject" required>
+                                        <option value="">Select a topic...</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="reservation">Reservation Support</option>
+                                        <option value="event">Event / Conference Inquiry</option>
+                                        <option value="feedback">Feedback</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Your Message</label>
+                                    <textarea id="message" rows="5" placeholder="How can we serve you better?" required></textarea>
+                                </div>
+                                <button type="submit" class="btn-book" style="width: 100%; border: none; padding: 15px; cursor: pointer;">Send Message</button>
+                            </form>
+                        </div>
                     </div>
-                    <div id="leaflet-map"
-                        style="height: 500px; border-radius: 24px; border: 1px solid var(--divider); box-shadow: 0 15px 45px rgba(0,0,0,0.08); position: relative; z-index: 1;">
-                    </div>
-                </div>
-
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        // Initialize map centered on PNG
-                        const map = L.map('leaflet-map').setView([-6.3144, 143.9555], 6);
-
-                        // Add high-end map tiles
-                        L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                            attribution: '&copy; OpenStreetMap contributors'
-                        }).addTo(map);
-
-                        // Branch Data
-                        const branches = [
-                            { name: "Head Office (Port Moresby)", coords: [-9.4812, 147.1681], type: "hq" },
-                            { name: "Lae Branch", coords: [-6.7322, 147.0097] },
-                            { name: "Mt. Hagen Branch", coords: [-5.8575, 144.2306] },
-                            { name: "Goroka Branch", coords: [-6.0833, 145.3833] },
-                            { name: "Madang Branch", coords: [-5.2164, 145.7987] },
-                            { name: "Wewak Branch", coords: [-3.5496, 143.6323] },
-                            { name: "Kokopo Branch", coords: [-4.3437, 152.2688] },
-                            { name: "Kimbe Branch", coords: [-5.5500, 150.1500] },
-                            { name: "Buka Branch", coords: [-5.4167, 154.6667] },
-                            { name: "Alotau Branch", coords: [-10.3157, 150.4588] },
-                            { name: "Kavieng Branch", coords: [-2.5761, 150.7969] },
-                            { name: "Kiunga Branch", coords: [-6.1167, 141.2833] },
-                            { name: "Lorengau (Manus)", coords: [-2.0250, 147.2750] },
-                            { name: "Vanimo Branch", coords: [-2.6841, 141.2996] },
-                            { name: "Popondetta Branch", coords: [-8.7667, 148.2333] },
-                            { name: "Kundiawa Branch", coords: [-6.0167, 144.9667] },
-                            { name: "Wabag Branch", coords: [-5.4833, 143.7000] },
-                            { name: "Mendi Branch", coords: [-6.1500, 143.6500] }
-                        ];
-
-                        // Add Markers
-                        branches.forEach(branch => {
-                            const marker = L.marker(branch.coords).addTo(map);
-                            marker.bindPopup(`<b>${branch.name}</b><br>Nambawan Savings & Loan`);
-
-                            if (branch.type === "hq") {
-                                marker.openPopup();
-                            }
-                        });
-                    });
-                </script>
-
-                <div class="social-share-strip flex" id="social-strip-contact">
-                    <button class="share-btn"><i class="fab fa-facebook-f"></i> Share</button>
-                    <button class="share-btn"><i class="fab fa-twitter"></i> Tweet</button>
-                    <button class="share-btn"><i class="fab fa-linkedin-in"></i> Share</button>
-                    <button class="share-btn"><i class="fas fa-envelope"></i> Mail</button>
-                    <button class="share-btn"><i class="fas fa-print"></i> Print</button>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer" id="footer">
-        <div class="container footer-grid">
-            <div class="footer-col" id="footer-about">
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
                 <div class="footer-logo">
-                    <img src="images/Logo.jpg" alt="NSLS Logo">
+                    <h2>PADDY'S HOTEL</h2>
+                    <p>Dedicated to providing the best hospitality experience in Port Moresby.</p>
                 </div>
-                <h4>About Us</h4>
-                <p>Nambawan Savings & Loan Society (NSLS) is a newly established Savings & Loan Society under the
-                    Savings & Loans Societies (Amended) Act 1995. Nambawan Savings & Loan Society was established to
-                    serve the short term financial needs of the Nambawan Super Fund members.</p>
-            </div>
-            <div class="footer-col" id="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="downloads.html">Downloads</a></li>
-                    <li><a href="general-savings.html">General Savings Account</a></li>
-                    <li><a href="education-savings.html">Education Savings Account</a></li>
-                    <li><a href="christmas-savings.html">Christmas Savings</a></li>
-                </ul>
-            </div>
-            <div class="footer-col" id="footer-message">
-                <h4>Quick Message</h4>
-                <!-- ✅ Formspree: replace YOUR_FORM_ID with your real ID from formspree.io -->
-                <form class="footer-form" id="footer-contact-form" action="backend/contact.php" method="POST">
-                    <div id="footer-form-status"
-                        style="display:none; padding:10px 14px; border-radius:6px; margin-bottom:10px; font-size:0.85rem; font-weight:600;">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="accomm_rooms.html">Accommodation</a></li>
+                        <li><a href="restaurant.html">Dining</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Follow Us</h4>
+                    <div style="display: flex; gap: 15px; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Message" rows="3" required></textarea>
-                    <button type="submit" id="footer-submit-btn">Send Message</button>
-                </form>
-            </div>
-            <div class="footer-col" id="footer-search">
-                <h4>Site Search</h4>
-                <p>Search for information across our site:</p>
-                <div class="footer-search">
-                    <input type="text" placeholder="Search …">
-                    <i class="fas fa-search"></i>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom text-center">
-            <div class="container">
-                <p>Copyright © 2026 Nambawan Savings & Loan | <a href="#">Privacy</a> | <a href="#">Terms &
-                        Conditions</a></p>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Paddy's Hotel & Apartments. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
-    <div class="search-overlay" id="search-overlay">
-        <div class="search-close" id="search-close">&times;</div>
-        <div class="search-container">
-            <div class="search-input-wrapper">
-                <input type="text" id="site-search-input" placeholder="Search the site...">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="search-results" id="search-results">
-                <!-- Results will appear here -->
-            </div>
-        </div>
-    </div>
-
-    <canvas id="physics-canvas"></canvas>
     <script src="script.js"></script>
-    <script>
-        // ── Form submission handler (AJAX / no page reload) ──────────────────
-        function handleFormspreeForm(formId, statusId, btnId) {
-            const form = document.getElementById(formId);
-            const status = document.getElementById(statusId);
-            const btn = document.getElementById(btnId);
-            if (!form) return;
-
-            form.addEventListener('submit', async function (e) {
-                e.preventDefault();
-                btn.disabled = true;
-                btn.textContent = 'Sending…';
-
-                try {
-                    const response = await fetch(form.action, {
-                        method: 'POST',
-                        body: new FormData(form),
-                        headers: { 'Accept': 'application/json' }
-                    });
-
-                    if (response.ok) {
-                        status.style.display = 'block';
-                        status.style.background = '#d4edda';
-                        status.style.color = '#155724';
-                        status.textContent = '✅ Message sent! We will get back to you shortly.';
-                        form.reset();
-                    } else {
-                        const data = await response.json();
-                        throw new Error(data.errors ? data.errors.map(e => e.message).join(', ') : 'Submission failed.');
-                    }
-                } catch (err) {
-                    status.style.display = 'block';
-                    status.style.background = '#f8d7da';
-                    status.style.color = '#721c24';
-                    status.textContent = '❌ Oops! ' + err.message;
-                } finally {
-                    btn.disabled = false;
-                    btn.textContent = formId === 'main-contact-form' ? 'Submit Message' : 'Send Message';
-                    setTimeout(() => { status.style.display = 'none'; }, 6000);
-                }
-            });
-        }
-
-        handleFormspreeForm('main-contact-form', 'form-status', 'main-submit-btn');
-        handleFormspreeForm('footer-contact-form', 'footer-form-status', 'footer-submit-btn');
-    </script>
 </body>
-
 </html>

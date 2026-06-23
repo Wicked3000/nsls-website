@@ -1,304 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nambawan Savings & Loan | NSLS</title>
+    <title>Paddy's Hotel & Apartments | Your Home Away From Home</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;700&display=swap"
-        rel="stylesheet">
-    <!-- Matter.js for AntiGravity effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <div id="loader-wrapper">
-        <div class="loader-content">
-            <img src="images/Logo.jpg" alt="NSLS Logo" class="loader-logo">
-            <div class="loader-progress">
-                <div class="loader-bar"></div>
-            </div>
-        </div>
-    </div>
-    <header class="top-bar">
-        <div class="container flex-between">
-            <div class="contact-info flex">
-                <div class="item" id="phone-info">
-                    <span class="icon">📞</span>
-                    <span>Call us : 1599</span>
-                </div>
-                <div class="item" id="email-info">
-                    <span class="icon">✉️</span>
-                    <span>Mail us : nsls@nambawansuper.com.pg</span>
-                </div>
-            </div>
-
-            <div class="quick-links flex">
-                <a href="https://www.nambawansuper.com.pg/" target="_blank">Nambawan Super</a>
-                <span class="divider">|</span>
-                <a href="https://portal.nambawansuper.com.pg/" target="_blank">Member Login</a>
-                <span class="divider">|</span>
-                <a href="https://portal.nambawansuper.com.pg/apply" target="_blank">Apply Online</a>
-            </div>
+    <header>
+        <div class="container navbar flex-between">
+            <a href="index.html" class="logo">
+                <h1>PADDY'S HOTEL</h1>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="accomm_rooms.html" class="nav-link">Accommodation</a></li>
+                    <li><a href="restaurant.html" class="nav-link">Dining</a></li>
+                    <li><a href="business.html" class="nav-link">Business</a></li>
+                    <li><a href="staynplay.html" class="nav-link">Stay & Play</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="reservations.html" class="btn-book">Book Now</a>
         </div>
     </header>
 
-    <nav class="main-nav">
-        <div class="container flex-between">
-            <a href="index.html" class="logo" id="main-logo">
-                <img src="images/Logo.jpg" alt="NSLS Logo">
-            </a>
-            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
-                &#9776;
-            </div>
-            <ul class="nav-menu flex">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="has-dropdown"><a href="services.html">Products & Services</a>
-                    <ul class="dropdown">
-                        <li><a href="general-savings.html">General Savings</a></li>
-                        <li><a href="education-savings.html">Education Savings</a></li>
-                        <li><a href="christmas-savings.html">Christmas Savings</a></li>
-                        <li><a href="loans.html">Loans</a></li>
-                        <li><a href="mobile-service.html">Mobile Service</a></li>
-                    </ul>
-                </li>
-                <li><a href="downloads.html">Downloads</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-                <li class="has-dropdown"><a href="contact.html">Contact</a>
-                    <ul class="dropdown">
-                        <li><a href="contact.html">Contact Form</a></li>
-                        <li><a href="offices.html">Our Offices</a></li>
-                    </ul>
-                </li>
-                <li class="search-icon"><span id="search-trigger">🔍</span></li>
-            </ul>
-        </div>
-    </nav>
-
     <main>
-        <section class="hero" id="hero-section">
-            <div class="hero-slides">
-                <!-- Slide 1: Education -->
-                <div class="slide active"
-                    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=1920');">
-                    <div class="hero-content">
-                        <h1>Education Savings</h1>
-                        <p>Save up to pay your children's school fees with fixed deductions fortnightly to your
-                            Education Savings account.</p>
-                        <a href="education-savings.html" class="cta-button">Know More</a>
-                    </div>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Your Home Away From Home</h1>
+                    <p class="mb-40">Located in the heart of Boroko, Paddy's Hotel offers excellent value, high-quality accommodation, and a warm Irish welcome in Port Moresby.</p>
+                    <a href="accomm_rooms.html" class="btn-book">Explore Rooms</a>
                 </div>
-                <!-- Slide 2: General Savings -->
-                <div class="slide"
-                    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1920');">
-                    <div class="hero-content">
-                        <h1>General Savings</h1>
-                        <p>Building your future starts with a single step. Grow your wealth with our flexible General
-                            Savings account.</p>
-                        <a href="general-savings.html" class="cta-button">Start Saving</a>
-                    </div>
-                </div>
-                <!-- Slide 3: Christmas Savings -->
-                <div class="slide"
-                    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&q=80&w=1920');">
-                    <div class="hero-content">
-                        <h1>Christmas Savings</h1>
-                        <p>Enjoy a stress-free festive season by planning ahead. Save consistently for the ultimate
-                            Christmas celebration.</p>
-                        <a href="christmas-savings.html" class="cta-button">View Details</a>
-                    </div>
-                </div>
-                <!-- Slide 4: Loans -->
-                <div class="slide"
-                    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1454165833767-027eeef1596e?auto=format&fit=crop&q=80&w=1920');">
-                    <div class="hero-content">
-                        <h1>NSLS Loans</h1>
-                        <p>Need financial support for your projects? Access fast, easy, and affordable loan products
-                            tailored for you.</p>
-                        <a href="loans.html" class="cta-button">Apply Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-indicators">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
             </div>
         </section>
 
-
-        <section class="welcome" id="welcome-section">
+        <section class="section-padding">
             <div class="container text-center">
-                <h2>Nambawan Savings & Loan</h2>
-                <div class="section-divider"></div>
-                <div class="floating-icons container flex-center">
-                    <a href="about.html" class="icon-circle" id="icon-leaf" style="text-decoration:none;">
-                        <span class="icon">🌿</span>
-                    </a>
-                    <a href="services.html" class="icon-circle" id="icon-lightbulb" style="text-decoration:none;">
-                        <span class="icon">💡</span>
-                    </a>
-                    <a href="downloads.html" class="icon-circle" id="icon-download" style="text-decoration:none;">
-                        <span class="icon">📥</span>
-                    </a>
+                <h2 class="mb-20">Welcome to Paddy’s Hotel & Apartments</h2>
+                <p class="mb-40" style="max-width: 800px; margin: 0 auto;">Ideally situated in Port Moresby's Boroko commercial district, we provide a peaceful and secure environment with easy access to government entities, airports, and major arterial routes.</p>
+
+                <div class="footer-grid">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=600" alt="Shamrock Pub" class="card-img">
+                        <div class="card-body text-center">
+                            <h3>The Shamrock Pub</h3>
+                            <p class="mb-20">First Irish Pub in Port Moresby. Friendly atmosphere to relax and meet friends.</p>
+                            <a href="restaurant.html" class="nav-link" style="color: var(--primary);">Discover More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=600" alt="Reef n Beef" class="card-img">
+                        <div class="card-body text-center">
+                            <h3>Reef n Beef Restaurant</h3>
+                            <p class="mb-20">A Gourmet's Delight featuring prime beef and the freshest local produce.</p>
+                            <a href="restaurant.html" class="nav-link" style="color: var(--primary);">View Menu <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&q=80&w=600" alt="Business Centre" class="card-img">
+                        <div class="card-body text-center">
+                            <h3>Business & Conferences</h3>
+                            <p class="mb-20">Full range of conference and secretarial services in our Boroko Park room.</p>
+                            <a href="business.html" class="nav-link" style="color: var(--primary);">Our Facilities <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="about" id="about-section">
-            <div class="container flex-between align-center">
-                <div class="about-text">
-                    <h3>Serving Your Financial Needs</h3>
-                    <p>Nambawan Savings & Loan Society (NSLS) was established to serve the short-term financial needs of
-                        NSL members. We provide a range of savings and loan products tailored to the Papua New Guinea
-                        community.</p>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=800"
-                        alt="Financial Growth" class="floating-img">
-                </div>
-            </div>
-        </section>
-
-        <section class="products" id="products-section">
+        <section class="section-padding bg-light">
             <div class="container">
-                <h2 class="text-center">Our Products</h2>
-                <div class="section-divider"></div>
-                <div class="product-grid">
-                    <a href="services.html" class="product-card" id="card-general"
-                        style="text-decoration:none; display:block;">
-                        <div class="card-icon">💰</div>
-                        <h4>General Savings</h4>
-                        <p>Flexible savings for your everyday goals.</p>
-                    </a>
-                    <a href="services.html" class="product-card" id="card-education"
-                        style="text-decoration:none; display:block;">
-                        <div class="card-icon">🎓</div>
-                        <h4>Education Savings</h4>
-                        <p>Planning for your children's future today.</p>
-                    </a>
-                    <a href="services.html" class="product-card" id="card-christmas"
-                        style="text-decoration:none; display:block;">
-                        <div class="card-icon">🎄</div>
-                        <h4>Christmas Accounts</h4>
-                        <p>Save throughout the year for the festive season.</p>
-                    </a>
-                    <a href="services.html" class="product-card" id="card-loans"
-                        style="text-decoration:none; display:block;">
-                        <div class="card-icon">🏦</div>
-                        <h4>Loans</h4>
-                        <p>Financial assistance when you need it most.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="downloads" id="downloads-section">
-            <div class="container">
-                <h2 class="text-center">Download Centre</h2>
-                <div class="section-divider"></div>
-                <div class="download-grid" id="download-grid">
-                    <div class="download-item" id="doc-1">
-                        <span class="file-icon">📄</span>
-                        <span>Membership Form</span>
+                <div class="flex-between" style="gap: 50px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <h2 class="mb-20">Premier Hotel Facilities</h2>
+                        <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> 24hr Room Service</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> 24hr Security</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Secure Car Park</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Airport Shuttle</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Laundry Services</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Hire Cars</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Business Centre</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Tourist Services</li>
+                        </ul>
                     </div>
-                    <div class="download-item" id="doc-2">
-                        <span class="file-icon">📄</span>
-                        <span>Loan Application</span>
-                    </div>
-                    <div class="download-item" id="doc-3">
-                        <span class="file-icon">📄</span>
-                        <span>Withdrawal Form</span>
-                    </div>
-                    <div class="download-item" id="doc-4">
-                        <span class="file-icon">📄</span>
-                        <span>Education Savings Form</span>
+                    <div style="flex: 1; min-width: 300px;">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=800" alt="Hotel Interior" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="cta-banner" id="banner-apply">
-            <div class="container flex-between">
-                <div class="banner-text">
-                    <h2>Save Time. Apply Online</h2>
-                    <p>Access our services faster than ever through our online portal.</p>
-                </div>
-                <a href="https://portal.nambawansuper.com.pg/apply" target="_blank" class="cta-button-outline">Apply
-                    Online Now</a>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer" id="footer">
-        <div class="container footer-grid">
-            <div class="footer-col" id="footer-about">
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
                 <div class="footer-logo">
-                    <img src="images/Logo.jpg" alt="NSLS Logo">
+                    <h2>PADDY'S HOTEL</h2>
+                    <p>Established in September 2012 to meet the requirements of guests seeking excellence and value.</p>
                 </div>
-                <h4>About Us</h4>
-                <p>Nambawan Savings & Loan Society (NSLS) is a newly established Savings & Loan Society under the
-                    Savings & Loans Societies (Amended) Act 1995. Nambawan Savings & Loan Society was established to
-                    serve the short term financial needs of the Nambawan Super Fund members.</p>
-            </div>
-            <div class="footer-col" id="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="downloads.html">Downloads</a></li>
-                    <li><a href="general-savings.html">General Savings Account</a></li>
-                    <li><a href="education-savings.html">Education Savings Account</a></li>
-                    <li><a href="christmas-savings.html">Christmas Savings</a></li>
-                </ul>
-            </div>
-            <div class="footer-col" id="footer-message">
-                <h4>Quick Message</h4>
-                <form class="footer-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Message" rows="3" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-            <div class="footer-col" id="footer-search">
-                <h4>Site Search</h4>
-                <p>Search for information across our site:</p>
-                <div class="footer-search">
-                    <input type="text" placeholder="Search …">
-                    <i class="fas fa-search"></i>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="accomm_rooms.html">Accommodation</a></li>
+                        <li><a href="restaurant.html">Restaurants</a></li>
+                        <li><a href="reservations.html">Book Online</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Boroko, Port Moresby</li>
+                        <li><i class="fas fa-phone"></i> +675 323 3202</li>
+                        <li><i class="fas fa-envelope"></i> reception@paddyshotelpng.com</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom text-center">
-            <div class="container">
-                <p>Copyright © 2026 Nambawan Savings & Loan | <a href="#">Privacy</a> | <a href="#">Terms &
-                        Conditions</a></p>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Paddy's Hotel & Apartments. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
-    <div class="search-overlay" id="search-overlay">
-        <div class="search-close" id="search-close">&times;</div>
-        <div class="search-container">
-            <div class="search-input-wrapper">
-                <input type="text" id="site-search-input" placeholder="Search the site...">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="search-results" id="search-results">
-                <!-- Results will appear here -->
-            </div>
-        </div>
-    </div>
-
-    <canvas id="physics-canvas"></canvas>
     <script src="script.js"></script>
 </body>
-
 </html>
